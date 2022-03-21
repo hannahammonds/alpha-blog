@@ -1,4 +1,7 @@
-<h1>This is the About Page</h1>
-
-<%= link_to 'Articles Listing', articles_path %> |
-<%= link_to 'Home Page', root_path %>
+<div id="page-content">
+  <div class="container" id="home-container">
+    <h1>This is the About Page</h1>
+    <%= link_to "All Articles", articles_path, class: "btn btn-outline-info" %> |
+    <%= link_to "Home Page", root_path, class: "btn btn-outline-info" %>
+  </div>
+</div>
