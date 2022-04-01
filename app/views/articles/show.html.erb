@@ -10,7 +10,7 @@
             <div class="card-body">
             <div class="card-text text-left"><%= simple_format(@article.description) %></div>
             <%= link_to "All Articles", articles_path, class: "btn btn-outline-info" %>
-            <% if logged_in && @article.user == current__user %> 
+            <% if logged_in? && @article.user == current_user %> 
                 <%= link_to "Edit", edit_article_path(@article), class: "btn btn-outline-warning" %>
                 <%= link_to "Delete", article_path(@article), class: "btn btn-outline-dark", method: :delete, data: {confirm: "Are you sure?"} %>
             <% end %> 
