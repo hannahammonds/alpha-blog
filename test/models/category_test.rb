@@ -3,6 +3,7 @@ require 'test_helper'
 class CategoryTest < ActiveSupport::TestCase 
 
     def setup 
+        #this is run before each senario
         @category = Category.new(name: "Sports") 
     end
 
